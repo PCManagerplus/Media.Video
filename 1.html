@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undownload Video Player</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <video controls controlsList="nodownload" playsinline>
+        <source src="https://github.com/PCManagerplus/media.web/releases/download/media/1.mp4" type="video/mp4">
+        お使いのブラウザは video タグをサポートしていません。
+    </video>
+</body>
+</html>
