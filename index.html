@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>リンク移動ボタン</title>
+    <!-- Materialize CSSのCDNを追加 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <script>
         function navigateToLink1() {
-            window.location.href = "https://www.example1.com";
+            window.location.href = "/1.html";
         }
         function navigateToLink2() {
             window.location.href = "https://www.example2.com";
@@ -17,8 +19,14 @@
     </script>
 </head>
 <body>
-    <button onclick="navigateToLink1()">リンク1に移動</button>
-    <button onclick="navigateToLink2()">リンク2に移動</button>
-    <button onclick="navigateToLink3()">リンク3に移動</button>
+    <div class="container">
+        <h3>リンク移動ボタン</h3>
+        <button class="btn waves-effect waves-light" onclick="navigateToLink1()">Video1</button>
+        <button class="btn waves-effect waves-light" onclick="navigateToLink2()">リンク2に移動</button>
+        <button class="btn waves-effect waves-light" onclick="navigateToLink3()">リンク3に移動</button>
+    </div>
+
+    <!-- Materialize JavaScriptのCDNを追加 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
